@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>تسجيل الدخول | متجر مارب للإلكترونيات</title>
+</head>
+<body>
+    <!-- زر تبديل السمة -->
+    <button class="theme-toggle" aria-label="تبديل الوضع">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- صفحة تسجيل الدخول -->
+    <main class="login-page">
+        <div class="login-card">
+            <!-- العلامة التجارية -->
+            <div class="login-brand">
+                <div class="login-logo">ME</div>
+                <div>
+                    <h2 class="login-title">تسجيل الدخول</h2>
+                    <p class="login-subtitle">مرحباً بك في متجر مارب للإلكترونيات</p>
+                </div>
+            </div>
+
+            <!-- نموذج تسجيل الدخول -->
+            <form id="loginForm" novalidate>
+                <!-- حقل البريد الإلكتروني -->
+                <div class="form-group">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        class="form-input" 
+                        placeholder="name@example.com" 
+                        required
+                    >
+                </div>
+
+                <!-- حقل كلمة المرور -->
+                <div class="form-group">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <div class="password-group">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input password-input" 
+                            placeholder="●●●●●●" 
+                            required
+                        >
+                        <button type="button" id="togglePassword" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- رسالة الخطأ -->
+                <div id="errorMessage" class="error-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    بيانات الدخول غير صحيحة
+                </div>
+
+                <!-- زر تسجيل الدخول -->
+                <button type="submit" class="btn btn--primary login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    دخول
+                </button>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- السكريبتات -->
+    <script src="js/theme.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
