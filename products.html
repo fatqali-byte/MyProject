@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>المنتجات | متجر مارب للإلكترونيات</title>
+  </head>
+  <body>
+    <!-- زر تبديل السمة -->
+    <button class="theme-toggle" aria-label="تبديل الوضع">
+      <i class="fas fa-moon"></i>
+    </button>
+
+
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <i class="fas fa-bolt"></i>
+          متجر مارب
+        </a>
+        <ul class="nav__menu">
+          <li><a href="index.html" class="nav__link">الرئيسية</a></li>
+          <li><a href="products.html" class="nav__link active">المنتجات</a></li>
+          <li><a href="about.html" class="nav__link">عن المتجر</a></li>
+          <li><a href="contact.html" class="nav__link">اتصل بنا</a></li>
+        </ul>
+        <div class="nav__search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="ابحث عن منتج..."
+          />
+          <button class="search__btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- عنوان الصفحة -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">منتجاتنا</h1>
+        <p class="page-description">
+          اكتشف مجموعتنا المميزة من الإلكترونيات والأجهزة الذكية
+        </p>
+      </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="products-section">
+      <div class="container">
+        <!-- فلاتر التصنيفات تضاف ديناميكياً -->
+        <div class="products-grid" id="productsGrid">
+          <!-- المنتجات سيتم إضافتها ديناميكياً عبر JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 متجر مارب للإلكترونيات — جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+
+    <!-- السكريبتات -->
+    <script src="js/theme.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>
